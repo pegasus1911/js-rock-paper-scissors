@@ -19,6 +19,8 @@ const resultDisplayElement = document.querySelector("#result-display")
 // console.log(resultDisplayElement)
 const resetButtonElemenet=document.querySelector("#resetButton")
 console.log(resetButtonElemenet)
+const howToPlayElement=document.querySelector(".how-to-play")
+console.log(howToPlayElement)
 /*--------------functions--------------*/
 
 //initialize game state
@@ -79,9 +81,13 @@ function compare(){
 function reset(){
     resultDisplayElement.textContent='Game reseted, play choose a choice'
 }
+function howToPlay(){
+    
+}
 /*--------------Event listinetr--------------*/
 rockButtonElement.addEventListener('click',play)
 paperButtonElement.addEventListener('click',play)
 scissorsButtonElement.addEventListener('click',play)
 resetButtonElemenet.addEventListener('click',reset)
+howToPlayElement.addEventListener('click',)
 /*--------------constants--------------*/
